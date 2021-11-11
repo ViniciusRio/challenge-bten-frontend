@@ -5,16 +5,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
-import { SigninComponent } from './pages/signin/signin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { SigninService } from './pages/signin/signin.service';
+import { CreateAccountComponent } from './pages/create-account/create-account.component';
+import { HomeComponent } from './layouts/home/home.component';
+import { AuthenticationComponent } from './layouts/authentication/authentication.component';
+import { AccountService } from './services/account/account.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SigninComponent,
-    DashboardComponent
+    DashboardComponent,
+    CreateAccountComponent,
+    HomeComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,7 @@ import { SigninService } from './pages/signin/signin.service';
     BrowserAnimationsModule
   ],
   providers: [
-    SigninService
+    AccountService
   ],
   bootstrap: [AppComponent]
 })
