@@ -10,6 +10,8 @@ import { CreateAccountComponent } from './pages/create-account/create-account.co
 import { HomeComponent } from './layouts/home/home.component';
 import { AuthenticationComponent } from './layouts/authentication/authentication.component';
 import { AccountService } from './services/account/account.service';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AccountService } from './services/account/account.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [
     AccountService
