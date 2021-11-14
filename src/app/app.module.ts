@@ -12,6 +12,7 @@ import { AuthenticationComponent } from './layouts/authentication/authentication
 import { AccountService } from './services/account/account.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { httpInterceptorProviders } from './http-interceptors';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
-    AccountService
+    AccountService,
+    httpInterceptorProviders
   ],
   bootstrap: [AppComponent]
 })
