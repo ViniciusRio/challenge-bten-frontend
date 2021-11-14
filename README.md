@@ -1,32 +1,46 @@
 # Challenge Bten Frontend
 
-## Instruções
+## File Structure 
+Here demonstrate the custom folder structure, the rest follow the project architecture itself
 
-Criar um site web utilizando angular 11, com os seguintes requisitos:
+```
+project
+│└──backend (nodejs/nestjs)   
+│   │    auth
+│   │    user
+│   │      └─── schema
+└───app (angular)
+│   │     auth
+│   │     interceptors
+│   │     pages
+│   │     services
+```
+## Run
 
-- Tela de Login
-- Tela de Cadastro (opção caso o usuário não tenha login)
-- Tela de Dashboard com gráficos em tela logada (dados mockados)
-
-## Exemplo de tela logada
-Modelo de Dashboard a ser seguido
-
-
-![alt text](https://res.cloudinary.com/hew4hghip/image/upload/v1619198749/geral/Challenge_bten_front.png)
-
-## Iniciando Client:
-
+For App Angular: 
 ```sh
-cd client
+cd folder
 yarn
 ng serve
 ```
 
-## Entrega:
+For App Angular: 
+```sh
+cd backend/api-login
+npm install
+npm run start:dev
+```
 
-- Criar um repositório público no github ou bitbucket com esse código e nos enviar o link
+## Endpoints (backend)
+- DEL - deleteAllUsers: localhost:3000/user
+- DEL - deleteUser: localhost:3000/user/:id
+- GET - getAllUsers: localhost:3000/user
+- POST - createUser: localhost:3000/user
+- POST - authLogin: localhost:3000/auth/login
 
-## Extras (opcional): 
-- Telas responsivas
-- Testes unitários
-- Hospedar em servidor gratuito (Heroku por exemplo)
+## Screens
+
+![alt text](./login.png)
+![alt text](./create-account.png)
+![alt text](./dashboard.png)
+
