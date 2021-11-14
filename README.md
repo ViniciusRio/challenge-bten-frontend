@@ -1,7 +1,8 @@
 # Challenge Bten Frontend
 
 ## File Structure 
-Here demonstrate the custom folder structure, the rest follow the project architecture itself
+
+Here we demonstrate the structure of custom folders, the rest follows the project's own architecture. There was also a concern about not repeating code and making it readable to other programmers using best practices
 
 ```
 project
@@ -37,6 +38,12 @@ npm run start:dev
 - GET - getAllUsers: localhost:3000/user
 - POST - createUser: localhost:3000/user
 - POST - authLogin: localhost:3000/auth/login
+
+## What Was Done
+- Login ✔️
+- Register ✔️
+- Dashboard ✔️
+- Responsive Design ✔️
 
 ## Screens
 
