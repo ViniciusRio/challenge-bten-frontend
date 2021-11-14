@@ -23,6 +23,11 @@ export class UserService {
 
     }
 
+    async getByEmail(email: string) {
+        return await this.userModel.findOne({email}).exec();
+
+    }
+
     async getAll() {
         return await this.userModel.find().exec();
     }
