@@ -10,10 +10,8 @@ export class AccountService {
   constructor(private http: HttpClient) { }
 
   async login(user: any) {
-    console.log({user});
     
     const result = await this.http.post<any>(`${environment.apiUrl}/auth/login`, user).toPromise();
-    console.log({result});
     
     if (result && result.access_token) {
       window.localStorage.setItem('token', result.access_token);
