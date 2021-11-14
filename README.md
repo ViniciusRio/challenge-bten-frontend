@@ -39,6 +39,8 @@ npm run start:dev
 - POST - createUser: localhost:3000/user
 - POST - authLogin: localhost:3000/auth/login
 
+data is being saved in mongodb
+
 ## What Was Done
 - Login ✔️
 - Register ✔️
